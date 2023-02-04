@@ -1,13 +1,19 @@
 import React from 'react'
 
 
-const Forminput=(props)=> { 
+const FormInput=(props)=> { 
   return (
-    <div className='formInput'>
-        <label >{props.name}  </label>
-        <input placeholder={props.placeholder}/>
-    </div>
+    <form action="">
+      <div>
+       <label htmlFor="">{props.name}</label>
+       </div> 
+       <div>
+       <input 
+       placeholder={props.placeholder} 
+       />
+       </div>
+    </form>
   )
 }
 
-export default Forminput
+export default FormInput
